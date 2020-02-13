@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<?php
+  session_start();
+?>
+<html lang="es">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title> Proyecto MonocromatINK</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet" type='text/css'>
+
+
+  <!-- Custom styles for this template -->
+  <link href="css/agency.css" rel="stylesheet">
+
+<!-- cards-->
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  position: relative;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0px;
+  right: 270px;
+  z-index: 1;
+}
+
+.bottomright {
+  position: absolute;
+  bottom: 0px;
+  left: 140px;
+  z-index: 1;
+
+
+</style>
+
+</head>
+
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <center>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="index.html">MonocromatINK
+        <img src="img/logos/Pluma.png" height="40"> </a> 
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html#services" href="#services">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html#portfolio">Galería de mangas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html#about">Planes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html#contact">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="Login.html">Ingresar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger"> <?php echo $Usuario ?> Ingresar</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </center>
+  <!-- Header -->
+
+  <header class="masthead">
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-lead-in">¡Bienvenidos aventureros!</div>
+        <div class="intro-heading text-uppercase">Tu cruzada acaba de comenzar</div>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Leer más</a>
+      </div>
+    </div>
+  </header>
+
+<center>
+    <div>
+    <img src="img/palta.png" class="border rounded-pill" width="2500" height="30">
+    </div>
+  </center>
+
+  <!-- Services -->
+  <section class="page-section" id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Servicios</h2>
+          <h3 class="section-subheading text-muted">"Ya todo está bien. <i> ¡Porque ya estoy aquí!. "</i></h3>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <span class="fa-stack fa-5x" >
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fas fa-hand-holding-heart fa-stack-1x fa-inverse"></i>
+
+          </span>
+          <h4 class="service-heading">Apoyo directo a creadores</h4>
+          <p class="text-muted">Vivir de forma independiente, pagar gastos, comer, vestir bien son cosas que todos queremos hacer a la par de hacer lo que amamos. Nosotros proporcionamos apoyo directo a los creadores de contenido.</p>  <br>
+          
+         
+        </div>
+        <div class="col-md-4">
+          <span class="fa-stack fa-5x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fas fa-atlas fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading">Totalmente globalizado</h4>
+          <p class="text-muted">Las obras a publicar se publicaran en formatos PDF, haciendo más fácil su lectura junto a la opción de llevarlos sin necesidad de internet. Junto a esto, todas estas obras estarán ¡oficialmente traducidas en 18 idiomas!</p>
+        </div>
+        <div class="col-md-4">
+          <span class="fa-stack fa-5x">
+            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+            <i class="fas fa-comment-slash fa-stack-1x fa-inverse"></i>
+            <i class="fas fa-comment-slash"></i>
+          </span>
+          <h4 class="service-heading">Sin anuncios que interrumpan tu lectura</h4>
+          <p class="text-muted">¡Disfruta de cada uno de los mangas de forma ilimitada y sin anuncios que interrumpan tu inmersión en las mas épicas historias de fantasía y aventuras!</p> 
+        </div>
+      </div>
+      <div class="bottomleft">
+          <img src="img/renders/pun.png" width=20%;>
+          </div>
+    </div>
+
+      <center>
+    <div>
+    <img src="img/palta.png" class="border rounded-pill" width="2500" height="30">
+    </div>
+    </center>
+
+  </section>
+
+
+
+
+
+  <!-- Portfolio Grid -->
+
+
+
+  <section class="bg-light page-section" id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Galeria de Mangas</h2>
+          <h3 class="section-subheading text-muted">"Si no puedes vivir tu vida como quieres, es mejor que estés muerto."</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/galeria/miniatura-punpun.jpg"  alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Oyasumi Punpun</h4>
+            <p class="text-muted">"La amo tanto que podría arrancarle la lengua y matarla."</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/galeria/berserk01.png" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Berserk</h4>
+            <p class="text-muted">"Un sueño puede ser algo hermoso, puede parecer un desafío de valientes, pero también puede ser una forma de escape para cobardes."</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/galeria/vagabond02.jpg" style="height:auto;width:350px;max-height:250px;" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Vagabond</h4>
+            <p class="text-muted">"No es necesario presentarme ante una bestia."</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/galeria/vinland01.jpg " style="height:auto;width:350px;max-height:250px;" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Vinland Saga</h4>
+            <p class="text-muted">"El único motivo por el que sigo dependiendo tanto de esta espada, se debe a mi inmadurez. Un auténtico guerrero no necesita espada."</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/galeria/jojo01.png" style="height:250px;width:350px;max-height:250px;" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>JoJo's bizarre adventure</h4>
+            <p class="text-muted">"Arigato Gyro... No puedo encontrar más palabras para decirlo"</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <center>
+            <img class="img-fluid" src="img/galeria/Naruto.jpg" style="height:250px;width:auto;max-height:250px; " alt=""> </center>
+          </a>
+          <div class="portfolio-caption">
+            <h4>Naruto</h4>
+            <p class="text-muted">"Siento llegar tarde... Me perdí en el sendero de la vida"</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div> <center>
+       <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="Galeria.html">Ver más mangas</a>
+       </center>
+    </div>
+     <div>
+      <br>
+      <br>
+      <center>
+    <img src="img/palta.png" class="border rounded-pill" width="2500" height="30">
+    </div>
+    </center>
+  </section>
+
+<center>
+   
+
+<style type="text/css">
+  
+  div.si {
+  border-style: solid;
+  border-color: #92a8d1;
+}
+</style>
+
+  <!-- About -->
+  <section class="page-section" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Planes</h2>
+          <h3 class="section-subheading text-muted">"¡Renuncio a mi humanidad, Jojo!"</h3>
+        </div>
+      </div>
+
+
+<div class="row">
+ 
+<div class="column" style="background-color:#c4d772; border-color: black; border: solid;">
+    <h2> 1 Mes</h2>
+    <p>Paga un mes solo por:</p>
+    <h2>$1.400 clp</h2> 
+    <br>
+  <a href="Plan.html">  <b style="background: #bc96d1; color: white" class="btn btn-primary1 btn-xl text-uppercase js-scroll-trigger" href="Plan.html">Contratar</b></a>
+  </div>
+
+  <div class="column" style="background-color:#bc96d1; border-color: black; border: solid;">
+    <h2> 3 Mes</h2>
+    <p>Paga tres meses solo por:</p>
+    <h6><strike> $4200 clp </strike></h6> <h2>$3.500 clp</h2> 
+     <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="Plan.html">Contratar</a>
+  </div>
+
+<div class="column" style="background-color:#c4d772; border-color: black; border: solid;">
+    <h2> Un año!</h2>
+    <p>Paga doce meses solo por:</p>
+    <h6><strike> $16.800 clp </strike></h6> <h2>$12.500 clp</h2>
+    <a href="Plan.html">  <b style="background: #bc96d1; color: white" class="btn btn-primary1 btn-xl text-uppercase js-scroll-trigger" href="Plan.html">Contratar</b></a>
+    <br>
+  </div>
+</div>
+
+
+<br>
+
+
+      <div class="row">
+          <ul class="timeline">          
+          </ul>
+        </div>
+         <div class="bottomright">
+          <img src="img/renders/naruto2.png" width=50%;>
+          </div>
+    </div>
+
+    <center>
+    
+    <div>
+    <img src="img/palta.png" class="border rounded-pill" width="2500" height="30">
+
+    </div>
+
+    </center>
+
+  </section>
+
+
+
+
+
+  <!-- Contact -->
+  <section class="page-section" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">¡Contactanos!</h2>
+          <h3 class="section-subheading text-muted">Si necesitas más información, puedes contactarnos</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <form id="contactForm" name="sentMessage" novalidate="novalidate">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input class="form-control" id="name" type="text" placeholder="Tu nombre *" required="required" data-validation-required-message="Por favor Escribe tu nombre">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="email" type="email" placeholder="Tu Email *" required="required" data-validation-required-message="Por favor escribe tu Email">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="phone" type="tel" placeholder="Tu celular *" required="required" data-validation-required-message="Por favor escribe tu numero celular.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <textarea class="form-control" id="message" placeholder="Tu mensaje *" required="required" data-validation-required-message="Por favor escribe tu mensaje."></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-lg-12 text-center">
+                <div id="success"></div>
+                <button  class="btn btn-primary btn-xl text-uppercase" type="submit">Enviar mensaje</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+<div>
+    <img src="img/palta.png" class="border rounded-pill" width="2500" height="30">
+    </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-4">
+          <span class="copyright">Derechos reservados a quien corresponda ® </span>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline social-buttons">
+            <h5> Bastián Fuenzalida <br>
+              Luis Mora
+            </h5>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline quicklinks">           
+           <img src="img/renders/dino.gif" width="20%">
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Portfolio hs -->
+
+
+<!--link-->
+
+
+  <!-- Modal 1 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <center>
+                <h2 class="text-uppercase">Oyasumi Punpun</h2>
+                <p class="item-intro text-muted">Inio Asano.</p>
+                <img class="img-fluid d-block mx-auto" src="img/Mangas/Punpun/01.jpg" alt="">
+                <img class="img-fluid d-block mx-auto" src="img/Mangas/Punpun/02.jpg" alt="">
+                <img class="img-fluid d-block mx-auto" src="img/Mangas/Punpun/03.jpg" alt="">
+                <img class="img-fluid d-block mx-auto" src="img/Mangas/Punpun/04.jpg" alt="">
+                <img class="img-fluid d-block mx-auto" src="img/Mangas/Punpun/05.jpg" alt="">
+                <a href="Plan.html"><button> <img class="img-fluid d-block mx-auto" src="img/Mangas/Punpun/06.jpg"  alt="" >
+                </button>
+                </a>
+                <ul class="list-inline">
+                  <li>Oyasumi Punpun</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Cerrar manga</button>
+                  </center>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <center>
+                <h2 class="text-uppercase">Berserk</h2>
+                <p class="item-intro text-muted">Kentaro Miura</p>
+                <img class="img-fluid d-block mx-auto" src="img/Mangas/Berserk/01.jpg" alt="">
+                <img class="img-fluid d-block mx-auto" src="img/Mangas/Berserk/02.jpg" alt="">
+                <img class="img-fluid d-block mx-auto" src="img/Mangas/Berserk/03.jpg" alt="">
+                <img class="img-fluid d-block mx-auto" src="img/Mangas/Berserk/04.jpg" alt="">
+                <img class="img-fluid d-block mx-auto" src="img/Mangas/Berserk/05.jpg" alt="">
+                <a href="Plan.html"><button> <img class="img-fluid d-block mx-auto" src="img/Mangas/Berserk/06.jpg"  alt="" >
+                </button>
+                </a>
+                <ul class="list-inline">
+                  <li>Berserk</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Cerrar manga</button>
+              </div>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <center>
+                <h2 class="text-uppercase">Vagabond</h2>
+                <p class="item-intro text-muted">Takehiko Inoue</p>
+                <img class="img-fluid d-block mx-auto" src="img/Mangas/Vagabond/01.jpg" alt="">
+                <img class="img-fluid d-block mx-auto" src="img/Mangas/Vagabond/02.jpg" alt="">
+                <img class="img-fluid d-block mx-auto" src="img/Mangas/Vagabond/03.jpg" alt="">
+                <img class="img-fluid d-block mx-auto" src="img/Mangas/Vagabond/04.jpg" alt="">
+                <img class="img-fluid d-block mx-auto" src="img/Mangas/Vagabond/05.jpg" alt="">
+                <a href="Plan.html"><button> <img class="img-fluid d-block mx-auto" src="img/Mangas/Vagabond/06.jpg"  alt="" >
+                </button>
+                </a>
+                <ul class="list-inline">
+                  <li>Vagabond</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Cerrar manga</button>
+              </div>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <center>
+                <h2 class="text-uppercase">Vinland Saga</h2>
+                <p class="item-intro text-muted">Makoto Yukimura </p>
+                <img class="img-fluid d-block mx-auto" src="img/Mangas/Viland/01.jpg" alt="">
+                <img class="img-fluid d-block mx-auto" src="img/Mangas/Viland/02.jpg" alt="">
+                <img class="img-fluid d-block mx-auto" src="img/Mangas/Viland/03.jpg" alt="">
+                <img class="img-fluid d-block mx-auto" src="img/Mangas/Viland/04.jpg" alt="">
+                <img class="img-fluid d-block mx-auto" src="img/Mangas/Viland/05.jpg" alt="">
+                <a href="Plan.html"><button> <img class="img-fluid d-block mx-auto" src="img/Mangas/Viland/06.jpg"  alt="" >
+                </button>
+                </a>
+                <ul class="list-inline">
+                  <li>Vinland Saga</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Cerrar manga</button>
+              </div>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <center>
+                <h2 class="text-uppercase">Jojo's bizarre adventure ~ Steel Ball Run</h2>
+                <p class="item-intro text-muted">Hirohiko Araki</p>
+                <img class="img-fluid d-block mx-auto" src="img/Mangas/Jojo/01.jpg" alt="">
+                <img class="img-fluid d-block mx-auto" src="img/Mangas/Jojo/02.jpg" alt="">
+                <img class="img-fluid d-block mx-auto" src="img/Mangas/Jojo/03.jpg" alt="">
+                <img class="img-fluid d-block mx-auto" src="img/Mangas/Jojo/04.jpg" alt="">
+                <img class="img-fluid d-block mx-auto" src="img/Mangas/Jojo/05.jpg" alt="">
+                <a href="Plan.html"><button> <img class="img-fluid d-block mx-auto" src="img/Mangas/Jojo/06.jpg"  alt="" >
+                </button>
+                </a>
+                <ul class="list-inline">
+                  <li>Jojo's bizarre adventure ~ Steel Ball Run</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Cerrar manga</button>
+              </div>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <center>
+                <h2 class="text-uppercase">Naruto</h2>
+                <p class="item-intro text-muted">Masashi Kishimoto</p>
+                <img class="img-fluid d-block mx-auto" src="img/Mangas/Naruto/01.jpg" alt="">
+                <img class="img-fluid d-block mx-auto" src="img/Mangas/Naruto/02.jpg" alt="">
+                <img class="img-fluid d-block mx-auto" src="img/Mangas/Naruto/03.jpg" alt="">
+                <img class="img-fluid d-block mx-auto" src="img/Mangas/Naruto/04.jpg" alt="">
+                <img class="img-fluid d-block mx-auto" src="img/Mangas/Naruto/05.jpg" alt="">
+                <a href="Plan.html"><button> <img class="img-fluid d-block mx-auto" src="img/Mangas/Naruto/06.jpg"  alt="" >
+                </button>
+                </a>
+                <ul class="list-inline">
+                  <li>Naruto</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Cerrar manga</button>
+              </div>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Contact form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/agency.min.js"></script>
+
+</body>
+
+</html>

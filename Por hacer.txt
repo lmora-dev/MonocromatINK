@@ -1,0 +1,2 @@
+Arreglar el textbox de la contraseña
+Cambiar imagenes de fondo?

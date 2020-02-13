@@ -1,0 +1,16 @@
+Hola bastian, soy el lucho. Numá sicierto
+Ya, mira, instala el wamp.
+Luego vas disco local C, wamp64, www y pegas ahí la wea de archivo.
+Luego inicias el wamp, y te metes en el navegador a 'Localhost'
+http://prntscr.com/q4vwyn
+Tu proyecto debe estar ahí, si al clickearle no te funca pon
+localhost/html y listo
+
+La base de dato trata de copiarla como la tengo yop
+http://prntscr.com/q4vxlg
+El root no tiene pass, así que dale.
+http://prntscr.com/q4vxww
+http://prntscr.com/q4vy1n
+http://prntscr.com/q4vy5o
+http://prntscr.com/q4vy7z
+Y listop
